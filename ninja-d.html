@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').click(function () {
+                   $(this).hide();
+                })
+                $('#btnRestaurar').click(function () {
+                    $('img').show();
+                    
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div style="height: 370px;width: 580px;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+            <img src="img.jpg" style="width:50%;max-width:120px;display: inline-block;border: solid 5px red;">
+        </div>  
+        <div>
+            <button id="btnRestaurar">Click para Restaruar</button>
+        </div>
+    </body>
+</html>
